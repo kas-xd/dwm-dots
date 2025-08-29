@@ -19,7 +19,7 @@ to change content of dwm and dwmblocks directory
 
 `cd ~/dwm` or `cd ~/dwmblocks`
 
-`sudo chown -R {USER}:{USER} .`
+`sudo chown -R username:username .`
 
 # Screenshot
 ![image](https://raw.githubusercontent.com/kas-xd/dwm-dots/refs/heads/main/screenshot.png)
