@@ -22,7 +22,7 @@ to change content of dwm and dwmblocks directory
 `sudo chown -R {USER}:{USER} .`
 
 # Screenshot
-[image](https://raw.githubusercontent.com/kas-xd/dwm-dots/refs/heads/main/screenshot.png)
+![image](https://raw.githubusercontent.com/kas-xd/dwm-dots/refs/heads/main/screenshot.png)
 
 
 
