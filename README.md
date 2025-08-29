@@ -4,11 +4,11 @@
 
 `cp -rf dwm-dots/dwm ~/;cp -rf dwm-dots/dwmblocks ~/`
 
-`cd dwm;sudo make clean install`
+`cd ~/dwm;sudo make clean install`
 
 `cd ~/dwmblocks;sudo make clean install`
 
-`cp -rf dwm-dots/alacritty ~/.config/`
+`cp -rf dwm-dots/.config/* ~/.config/`
 
 `cp dwm-dots/.xinitrc ~/;cp dwm-dots/.zshrc ~/`
 
@@ -17,6 +17,6 @@
 
 to change content of dwm and dwmblocks directory
 
-`cd dwm` or `cd dwmblocks`
+`cd ~/dwm` or `cd ~/dwmblocks`
 
 `sudo chown -R {USER}:{USER} .`
