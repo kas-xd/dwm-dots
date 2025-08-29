@@ -17,6 +17,6 @@
 
 to change content of dwm and dwmblocks directory
 
-`cd dwm`
+`cd dwm` or `cd dwmblocks`
 
 `sudo chown -R user:user .`
