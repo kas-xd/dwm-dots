@@ -2,44 +2,32 @@
 size = 14.0
 
 [font.normal]
-family = "JetBrains Mono"
-
-[colors.bright]
-black = "0x100F0F"
-blue = "0x4385BE"
-cyan = "0x3AA99F"
-green = "0x879A39"
-magenta = "0xCE5D97"
-red = "0xD14D41"
-white = "0xFFFCF0"
-yellow = "0xD0A215"
-
-[colors.cursor]
-cursor = "0xFFFCF0"
-text = "0xFFFCF0"
-
-[colors.dim]
-black = "0x100F0F"
-blue = "0x205EA6"
-cyan = "0x24837B"
-green = "0x66800B"
-magenta = "0xA02F6F"
-red = "0xAF3029"
-white = "0xFFFCF0"
-yellow = "0xAD8301"
-
-[colors.normal]
-black = "0x100F0F"
-blue = "0x205EA6"
-cyan = "0x24837B"
-green = "0x66800B"
-magenta = "0xA02F6F"
-red = "0xAF3029"
-white = "0xFFFCF0"
-yellow = "0xAD8301"
+family = "JetBrains Mono Nerd Font"
 
 [colors.primary]
-background = "0x282726"
-bright_foreground = "0xFFFCF0"
-dim_foreground = "0xFFFCF0"
-foreground = "0xFFFCF0"
+# hard contrast background = = '#1d2021'
+background = '#282828'
+# soft contrast background = = '#32302f'
+foreground = '#ebdbb2'
+
+# Normal colors
+[colors.normal]
+black   = '#282828'
+red     = '#cc241d'
+green   = '#98971a'
+yellow  = '#d79921'
+blue    = '#458588'
+magenta = '#b16286'
+cyan    = '#689d6a'
+white   = '#a89984'
+
+# Bright colors
+[colors.bright]
+black   = '#928374'
+red     = '#fb4934'
+green   = '#b8bb26'
+yellow  = '#fabd2f'
+blue    = '#83a598'
+magenta = '#d3869b'
+cyan    = '#8ec07c'
+white   = '#ebdbb2'
