@@ -1,5 +1,7 @@
 # Installation
 
+install alacritty, rofi via package manager or building from source
+
 `git clone https://github.com/kas-xd/dwm-dots`
 
 `cp -rf dwm-dots/dwm ~/;cp -rf dwm-dots/dwmblocks ~/`
