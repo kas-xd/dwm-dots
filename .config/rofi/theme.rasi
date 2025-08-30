@@ -2,6 +2,7 @@
     /* Theme settings */
     highlight: bold italic;
     scrollbar: true;
+    font: "JetBrains Mono 14";
 
     /* Gruvbox dark colors */
     gruvbox-dark-bg0:          #202020;
