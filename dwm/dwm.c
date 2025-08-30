@@ -187,7 +187,7 @@ static void motionnotify(XEvent *e);
 static void movemouse(const Arg *arg);
 static Client *nexttagged(Client *c);
 static Client *nexttiled(Client *c);
-static void pop(Client *c);
+//static void pop(Client *c);
 static void propertynotify(XEvent *e);
 static void quit(const Arg *arg);
 static Monitor *recttomon(int x, int y, int w, int h);
@@ -234,7 +234,7 @@ static Monitor *wintomon(Window w);
 static int xerror(Display *dpy, XErrorEvent *ee);
 static int xerrordummy(Display *dpy, XErrorEvent *ee);
 static int xerrorstart(Display *dpy, XErrorEvent *ee);
-static void zoom(const Arg *arg);
+//static void zoom(const Arg *arg);
 
 /* variables */
 static const char broken[] = "broken";
@@ -1224,7 +1224,7 @@ nexttiled(Client *c)
 	for (; c && (c->isfloating || !ISVISIBLE(c)); c = c->next);
 	return c;
 }
-
+/*
 void
 pop(Client *c)
 {
@@ -1233,7 +1233,7 @@ pop(Client *c)
 	focus(c);
 	arrange(c->mon);
 }
-
+*/
 void
 propertynotify(XEvent *e)
 {
@@ -2140,7 +2140,7 @@ xerrorstart(Display *dpy, XErrorEvent *ee)
 	die("dwm: another window manager is already running");
 	return -1;
 }
-
+/*
 void
 zoom(const Arg *arg)
 {
@@ -2152,7 +2152,7 @@ zoom(const Arg *arg)
 		return;
 	pop(c);
 }
-
+*/
 int
 main(int argc, char *argv[])
 {
