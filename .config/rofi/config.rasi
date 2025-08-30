@@ -27,4 +27,4 @@ configuration{
     kb-mode-complete: "Control+o";
 }
 
-@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+@theme "~/.config/rofi/theme.rasi"
