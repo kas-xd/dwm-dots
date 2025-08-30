@@ -59,6 +59,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *rofi[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browser[] = { "firefox", NULL };
 static const char *fileman[] = { "dolphin", NULL };
@@ -66,7 +67,7 @@ static const char *flameshot[] = {"flameshot", "gui", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = rofi } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browser } },
     { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = fileman } },
