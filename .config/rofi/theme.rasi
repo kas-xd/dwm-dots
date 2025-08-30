@@ -45,4 +45,8 @@
     selected-urgent-foreground:  @urgent-foreground;
 }
 
+window {
+    width: 500;
+}
+
 @import "gruvbox-common"
