@@ -5,16 +5,16 @@
     font: "JetBrains Mono 14";
 
     /* Gruvbox dark colors */
-    gruvbox-dark-bg0:          #202020;
-    gruvbox-dark-bg0-soft:     #202020;
+    gruvbox-dark-bg0:          #282828;
+    gruvbox-dark-bg0-soft:     #32302f;
     gruvbox-dark-bg3:          #665c54;
-    gruvbox-dark-fg0:          #efe1d3;
-    gruvbox-dark-fg1:          #efe1d3;
+    gruvbox-dark-fg0:          #fbf1c7;
+    gruvbox-dark-fg1:          #ebdbb2;
     gruvbox-dark-red-dark:     #cc241d;
     gruvbox-dark-red-light:    #fb4934;
     gruvbox-dark-yellow-dark:  #d79921;
     gruvbox-dark-yellow-light: #fabd2f;
-    gruvbox-dark-gray:         #efe1d3;
+    gruvbox-dark-gray:         #a89984;
 
     /* Theme colors */
     background:                  @gruvbox-dark-bg0;
@@ -51,3 +51,4 @@ window {
 }
 
 @import "gruvbox-common"
+
