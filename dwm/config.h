@@ -70,7 +70,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = rofi } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      spawn,          {.v = browser } },
-        { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = fileman } },
+    { MODKEY|ShiftMask,             XK_f,      spawn,          {.v = fileman } },
 	{ MODKEY,                       XK_n,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
