@@ -4,6 +4,7 @@ static const Block blocks[] = {
 	{"vol:", "pamixer --get-volume | sed 's/$/%/'", 1, 10}, 
 	{"cpu:", "top -bn1 | grep 'Cpu(s)' | sed 's/.*, *\\([0-9.]*\\)%* id.*/\\1/' | awk '{print 100 - $1\"%\"}'", 5, 13}, 
 	{"mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g", 30, 0}, 
+    {"bat:", "echo \"$(cat /sys/class/power_supply/BAT0/capacity)%\"", 15, 0},
 	{"", "date '+%b %d (%a) %H:%M'", 5, 0}, 
 };
 
