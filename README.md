@@ -1,25 +1,6 @@
-# Installation
+By default owner of dwm, st and dwmblocks is the root user, so to change change config you need to set ownership by using this command:
 
-install alacritty, rofi via package manager or building from source
-
-`git clone https://github.com/kas-xd/dwm-dots`
-
-`cp -rf dwm-dots/dwm ~/;cp -rf dwm-dots/dwmblocks ~/`
-
-`cd ~/dwm;sudo make clean install`
-
-`cd ~/dwmblocks;sudo make clean install`
-
-`cp -rf dwm-dots/.config/* ~/.config/`
-
-`cp dwm-dots/.xinitrc ~/;cp dwm-dots/.zshrc ~/`
-
-`startx`
-
-
-to change content of dwm and dwmblocks directory
-
-`cd ~/dwm` or `cd ~/dwmblocks`
+`cd ~/suckless/`
 
 `sudo chown -R username:username .`
 
