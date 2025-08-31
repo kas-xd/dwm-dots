@@ -7,6 +7,7 @@ after compiling ownership of dwm, st and dwmblocks will set to root user, so to 
 # Screenshot
 ![image](https://raw.githubusercontent.com/kas-xd/dwm-dots/refs/heads/main/screenshot.png)
 
+![image1](https://raw.githubusercontent.com/kas-xd/dwm-dots/refs/heads/main/screenpicom.png)
 
 
 [fastfetch config](https://github.com/dacrab/fastfetch-config)
