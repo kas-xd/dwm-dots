@@ -1,4 +1,4 @@
-By default owner of dwm, st and dwmblocks is the root user, so to change change config you need to set ownership by using this command:
+after compiling ownership of dwm, st and dwmblocks will set to root user, so to change change config you need to set ownership by using this command:
 
 `cd ~/suckless/`
 
