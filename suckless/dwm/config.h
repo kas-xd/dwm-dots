@@ -103,6 +103,9 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
     { 0, XF86XK_AudioRaiseVolume, spawn, {.v = (const char*[]){"pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL} } },
     { 0, XF86XK_AudioLowerVolume, spawn, {.v = (const char*[]){"pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL} } },
+    { 0, XF86XK_AudioMute,        spawn, {.v = (const char*[]){"pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL} } },
+    { 0, XF86XK_MonBrightnessUp,  spawn, {.v = (const char*[]){"brightnessctl", "s", "+5%", NULL} } },
+    { 0, XF86XK_MonBrightnessDown,spawn, {.v = (const char*[]){"brightnessctl", "s", "5%-", NULL} } },
 	{ 0, XK_Print, spawn, {.v = flameshot} },
 };
 
