@@ -112,7 +112,6 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=black,bold'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
 
 alias vim="nvim"
-alias ufetch="source ~/.config/scripts/ufetch"
 alias ls='ls --color=auto'
 alias rm='rm -i'
 alias cp='cp -i'
