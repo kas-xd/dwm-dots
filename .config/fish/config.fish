@@ -21,4 +21,9 @@ end
 set fish_greeting ""
 
 alias vim="nvim"
-alias ufetch="source ~/.config/scripts/ufetch"
+alias ls='ls --color=auto'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias mkdir='mkdir -p'
+alias ..='cd ..'
