@@ -118,10 +118,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias ..='cd ..'
-alias df='df -h'
-alias du='du -h'
-alias free='free -h'
-alias ps='ps aux'
 
 has() {
     command -v "$1" >/dev/null 2>&1
