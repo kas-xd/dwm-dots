@@ -5,6 +5,7 @@ setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle,caps:escape"
 xset s 600 600 &
 xss-lock -- slock &
 xset dpms 300 600 900 &
+xset r rate 200 35
 dwmblocks &
 picom --vsync &
 xclip &
