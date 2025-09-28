@@ -5,7 +5,4 @@ after you compile `dwm`, `st`, and `dwmblocks`, they might be owned by the root 
 `sudo chown -R username:username .`
 
 # Screenshot
-![image](https://raw.githubusercontent.com/kas-xd/dwm-dots/refs/heads/main/screenpicom.png)
-
-
-[fastfetch config](https://github.com/dacrab/fastfetch-config)
+![image](https://raw.githubusercontent.com/kas-xd/dwm-dots/refs/heads/main/screenshot.png)
