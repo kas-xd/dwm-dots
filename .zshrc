@@ -19,7 +19,6 @@ else
 fi
 
 # prompt
-
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' formats ' %F{blue}(%b)%f'
@@ -50,6 +49,7 @@ precmd() {
 
 setopt prompt_subst
 PROMPT='%F{yellow}%n%f@%F{red}%m%f %F{green}%~%f${vcs_info_msg_0_}${git_status} $ '
+
 # history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -85,7 +85,7 @@ zstyle ':completion:*' rehash true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 zstyle ':completion:*:*:*:*:processes' command "ps -u $USER -o pid,user,comm -w -w"
 
-# keymapping
+# keymapping 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey '^P' history-substring-search-up
@@ -95,11 +95,6 @@ bindkey '^[[C' forward-char
 bindkey '^[b' backward-word
 bindkey '^[f' forward-word
 bindkey '^L' clear-screen
-
-# auto-suggestion
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
 # syntax highlighting
 typeset -A ZSH_HIGHLIGHT_STYLES
@@ -119,10 +114,15 @@ export PAGER="less"
 export LESS="-R -X -F"
 export LESSHISTFILE="/dev/null"
 
-# alias
+# aliases
 alias vim="nvim"
-alias ls='ls -C -U -t -A -p --color=auto'
+alias ls='ls --color=auto -A'
+alias ll='ls -lh'
+alias la='ls -lAh'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
 
+# utility function
 has() {
     command -v "$1" >/dev/null 2>&1
 }
