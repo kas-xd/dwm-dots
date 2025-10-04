@@ -6,7 +6,6 @@ fi
 source ~/.zinit/bin/zinit.zsh
 
 # plugins
-zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light marlonrichert/zsh-autocomplete
