@@ -1,5 +1,4 @@
 require("lazy").setup({
-  -- Theme
   {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
@@ -8,7 +7,6 @@ require("lazy").setup({
     end,
   },
 
-  -- File explorer
   {
     "stevearc/oil.nvim",
     config = function()
@@ -18,15 +16,25 @@ require("lazy").setup({
     end,
   },
 
-  -- Fuzzy finder
   {
-    "echasnovski/mini.pick",
+    "echasnovski/mini.nvim",
     config = function()
       require('mini.pick').setup()
+      
+      require('mini.pairs').setup()
+      
+      require('mini.completion').setup({
+        delay = { completion = 100, info = 100, signature = 50 },
+        window = {
+          info = { height = 25, width = 80, border = 'rounded' },
+          signature = { height = 25, width = 80, border = 'rounded' },
+        },
+      })
+       
+      require('mini.jump').setup()
     end,
   },
 
-  -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -40,37 +48,34 @@ require("lazy").setup({
     end,
   },
 
-  -- LSP
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      require('mason').setup({
+        ui = { border = 'rounded' }
+      })
+    end,
+  },
+  
+  {
+    "williamboman/mason-lspconfig.nvim",
+    dependencies = { "mason.nvim" },
+    config = function()
+      require('mason-lspconfig').setup({
+        ensure_installed = { 'pyright', 'lua_ls', 'tinymist' },
+        automatic_installation = true,
+      })
+    end,
+  },
+  
   {
     "neovim/nvim-lspconfig",
+    dependencies = { "mason-lspconfig.nvim" },
     config = function()
       require('lsp')
     end,
   },
 
-  -- Auto pairs
-  {
-    "echasnovski/mini.pairs",
-    config = function()
-      require('mini.pairs').setup()
-    end,
-  },
-
-  -- Completion
-  {
-    "echasnovski/mini.completion",
-    config = function()
-      require('mini.completion').setup({
-        delay = { completion = 100, info = 100, signature = 50 },
-        window = {
-          info = { height = 25, width = 80, border = 'rounded' },
-          signature = { height = 25, width = 80, border = 'rounded' },
-        },
-      })
-    end,
-  },
-
-  -- Statusline
   {
     "nvim-lualine/lualine.nvim",
     config = function()
@@ -88,10 +93,8 @@ require("lazy").setup({
     end,
   },
 
-  -- Undo tree
   "mbbill/undotree",
 
-  -- Snippets
   "rafamadriz/friendly-snippets",
   {
     "L3MON4D3/LuaSnip",
@@ -112,7 +115,6 @@ require("lazy").setup({
         end
       end, { desc = 'Jump snippet backward' })
 
-      -- Tab completion
       vim.keymap.set('i', '<Tab>', function()
         if vim.fn.pumvisible() == 1 then
           return '<C-n>'
@@ -137,7 +139,6 @@ require("lazy").setup({
     end,
   },
 
-  -- Formatter
   {
     "stevearc/conform.nvim",
     config = function()
@@ -159,7 +160,6 @@ require("lazy").setup({
     end,
   },
 
-  -- Git signs
   {
     "lewis6991/gitsigns.nvim",
     config = function()

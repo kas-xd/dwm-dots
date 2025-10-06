@@ -1,4 +1,3 @@
--- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -14,5 +13,4 @@ require('options')
 require('keymaps')
 require('plugins')
 
--- Theme
 vim.cmd.colorscheme('gruvbox')
