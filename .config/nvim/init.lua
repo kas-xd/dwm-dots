@@ -120,9 +120,8 @@ vim.keymap.set('n', '<leader>dl', vim.diagnostic.setloclist, { desc = 'Diag List
 
 -- LSP
 local lsp_caps = require('mini.completion').get_lsp_capabilities()
-local lspconfig = require('lspconfig')
 
-lspconfig.lua_ls.setup({
+vim.lsp.config('lua_ls', {
   capabilities = lsp_caps,
   settings = {
     Lua = {
@@ -133,8 +132,12 @@ lspconfig.lua_ls.setup({
   },
 })
 
-lspconfig.pyright.setup({ capabilities = lsp_caps })
-lspconfig.tinymist.setup({ capabilities = lsp_caps })
+vim.lsp.config('pyright',  { capabilities = lsp_caps })
+vim.lsp.config('tinymist', { capabilities = lsp_caps })
+
+for _, name in ipairs({ 'lua_ls', 'pyright', 'tinymist' }) do
+  vim.lsp.enable(name)
+end
 
 -- LSP attach
 local map = function(mode, lhs, rhs, desc) vim.keymap.set(mode, lhs, rhs, { desc = desc }) end
