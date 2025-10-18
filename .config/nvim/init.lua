@@ -100,12 +100,16 @@ vim.keymap.set('n', '<leader>u', '<cmd>UndotreeToggle<CR>', { desc = 'Undotree' 
 -- keymaps
 vim.keymap.set('n', '<leader>w', '<cmd>write<CR>', { desc = 'Save' })
 vim.keymap.set('n', '<leader>q', '<cmd>quit<CR>',  { desc = 'Quit' })
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>e', '<cmd>Oil<CR>',            { desc = 'Explorer' })
 vim.keymap.set('n', '<leader>f', '<cmd>Pick files<CR>',     { desc = 'Files' })
 vim.keymap.set('n', '<leader>b', '<cmd>Pick buffers<CR>',   { desc = 'Buffers' })
 vim.keymap.set('n', '<leader>/', '<cmd>Pick grep_live<CR>', { desc = 'Live Grep' })
 vim.keymap.set('n', '<leader>h', '<cmd>Pick help<CR>',      { desc = 'Help' })
+vim.keymap.set('n', '<A-h>', '5h', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-j>', '5j', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-k>', '5k', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-l>', '5l', { noremap = true, silent = true })
+
 
 -- diagnostics
 vim.diagnostic.config({
